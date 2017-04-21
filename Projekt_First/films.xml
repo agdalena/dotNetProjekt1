@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FilmList>
+
+  <FILM ID="1" Category="Science-Fiction">
+    <Title>Matrix</Title>
+    <TitleOrg>The Matrix</TitleOrg>
+    <Director>Lana Wachowski, Lilly Wachowski</Director>
+    <Year>1999</Year>
+    <Country>Australia, USA</Country>
+    <Starring>
+      <Star>Keanu Reeves</Star>
+      <Star>Laurence Fishburne</Star>
+    </Starring>
+  </FILM>
+
+  <FILM ID="2" Category="Dramat">
+    <Title>Forrest Gump</Title>
+    <TitleOrg>Forrest Gump</TitleOrg>
+    <Director>Robert Zemeckis</Director>
+    <Year>1994</Year>
+    <Country>USA</Country>
+    <Starring>
+      <Star>Tom Hanks</Star>
+      <Star>Robin Wright</Star>
+    </Starring>
+  </FILM>
+
+  <FILM ID="3" Category="Action">
+    <Title>Szybcy i wściekli 8</Title>
+    <TitleOrg>The Fate of the Furious</TitleOrg>
+    <Director>F. Gary Gray</Director>
+    <Year>2017</Year>
+    <Country>USA</Country>
+    <Starring>
+      <Star>Vin Diesel</Star>
+      <Star>Jason Statham</Star>
+      <Star>Dwayne Johnson</Star>
+    </Starring>
+  </FILM>
+  
+</FilmList>

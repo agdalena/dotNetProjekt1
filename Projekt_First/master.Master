@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="Projekt_First.master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div id="logo"></div>
+            <div id="search"></div>
+            <div id="login">
+
+                <asp:MultiView ID="loginMV" runat="server">
+                    <asp:View ID="nologin" runat="server">
+                        Login:<asp:TextBox ID="loginTB" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator class="errormsg" ID="RequiredFieldValidator1" runat="server" ErrorMessage="To pole jest wymagane!" ControlToValidate="loginTB"></asp:RequiredFieldValidator>
+                        Hasło:<asp:TextBox ID="passwdTB" runat="server" TextMode="Password"></asp:TextBox>
+                        <asp:RequiredFieldValidator class="errormsg" ID="RequiredFieldValidator2" runat="server" ErrorMessage="To pole jest wymagane!" ControlToValidate="passwdTB"></asp:RequiredFieldValidator>
+                        <asp:Button ID="zaloguj" OnClick="Button_Zaloguj" runat="server" Text="Zaloguj" />
+                    </asp:View>
+                    <asp:View ID="inlogin" runat="server">
+                        <a>Witaj
+                            <label id="loginLabel" runat="server"></label>
+                        </a>
+                        <asp:Button ID="wyloguj" OnClick="Button_Wyloguj" runat="server" Text="Wyloguj" />
+                    </asp:View>
+
+                </asp:MultiView>
+
+            </div>
+            <asp:SiteMapDataSource runat="server" ID="mainSiteMap"></asp:SiteMapDataSource>
+            <div id="menu">
+                <asp:Menu ID="masterMenu" runat="server" DataSourceID="mainSiteMap" Orientation="Horizontal" StaticDisplayLevels="3"></asp:Menu>
+            </div>
+            <asp:ContentPlaceHolder ID="main" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </div>
+        <div id="footer"></div>
+    </form>
+</body>
+</html>

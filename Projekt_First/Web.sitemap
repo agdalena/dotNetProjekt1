@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode>
+    <siteMapNode url="movies.aspx" title="Filmy"  description="">
+      <siteMapNode url="movies.aspx?q=action" title="Akcja"  description="" />
+      <siteMapNode url="movies.aspx?q=scienceFiction" title="Science-Fiction"  description="" />
+    </siteMapNode>
+    <siteMapNode url="series.aspx" title="Seriale"  description="">
+      <siteMapNode url="series.aspx?q=comedy" title="Komedia"  description="" />
+      <siteMapNode url="series.aspx?q=action" title="Akcja"  description="" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>
