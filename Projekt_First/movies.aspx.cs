@@ -9,7 +9,13 @@ namespace Projekt_First
 {
     public partial class movies : System.Web.UI.Page
     {
-    
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            String wybrane = GridView1.SelectedDataKey.Value.ToString();
+            
+            XmlDataSource1.XPath = "/FilmList/FILM[@ID=" + wybrane + "]";
+        }
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -18,6 +24,9 @@ namespace Projekt_First
                 categoryLabel.Text = parameter;
             else
                 categoryLabel.Text = Const.NOCAT;
+
+            
+            sourceFilm.XPath = "/FilmList/FILM[@Category=" + parameter + "]";
 
             if (GridView1.SelectedRow != null)
             {

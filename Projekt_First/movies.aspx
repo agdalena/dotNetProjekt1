@@ -1,14 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master.Master" AutoEventWireup="true" CodeBehind="movies.aspx.cs" Inherits="Projekt_First.movies" %>
 
-<asp:Content ID="skrypt" ContentPlaceHolderID="skrypt" runat="server">
-    <script runat="server">
-        void GridView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            String wybrane = GridView1.SelectedDataKey.Value.ToString();
-            XmlDataSource1.XPath = "/FilmsList/FILM[@ID=" + wybrane + "]";
-        }
-    </script>
-</asp:Content>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="main" runat="server">
