@@ -5,7 +5,7 @@
         void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
             String wybrane = GridView1.SelectedDataKey.Value.ToString();
-            XmlDataSource1.XPath = "/DvdList/DVD[@ID=" + wybrane + "]";
+            XmlDataSource1.XPath = "/FilmsList/FILM[@ID=" + wybrane + "]";
         }
     </script>
 </asp:Content>

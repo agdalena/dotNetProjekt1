@@ -1,8 +1,8 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="Projekt_First.master" %>
 
 <!DOCTYPE html>
-    <asp:ContentPlaceHolder ID="skrypt" runat="server">
-    </asp:ContentPlaceHolder>
+<asp:contentplaceholder id="skrypt" runat="server">
+    </asp:contentplaceholder>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Flmy&Seriale</title>
@@ -11,13 +11,17 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-      <div class="w3-container w3-padding-16">
-    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-closebtn w3-hover-text-red"></i>
-      <a href="/index.html"><h3 class="w3-wide"><b>Filmy&Seriale</b></h3></a>
-  </div>
+
     <form id="form1" runat="server">
         <div>
-            <div id="logo"></div>
+            <div id="logo">
+                <div class="w3-container w3-padding-16">
+                    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-closebtn w3-hover-text-red"></i>
+                    <a href="/index.html">
+                        <h3 class="w3-wide"><b>Filmy&Seriale</b></h3>
+                    </a>
+                </div>
+            </div>
             <div id="search"></div>
             <div id="login">
 
@@ -47,7 +51,7 @@
             </asp:ContentPlaceHolder>
 
         </div>
-        <div id="footer"></div>
+        <footer></footer>
     </form>
 </body>
 </html>
