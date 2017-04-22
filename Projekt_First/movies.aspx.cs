@@ -20,13 +20,17 @@ namespace Projekt_First
         protected void Page_Load(object sender, EventArgs e)
         {
             string parameter = getParam(Const.PARAM);
-            if (!String.IsNullOrEmpty(parameter))
+
+            if (!String.IsNullOrEmpty(parameter)) { 
                 categoryLabel.Text = parameter;
+            sourceFilm.XPath = "/FilmList/FILM[@Category=" + parameter + "]";
+            }
             else
                 categoryLabel.Text = Const.NOCAT;
 
             
-            sourceFilm.XPath = "/FilmList/FILM[@Category=" + parameter + "]";
+
+           
 
             if (GridView1.SelectedRow != null)
             {
