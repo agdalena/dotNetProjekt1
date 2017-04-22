@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SeriesList>
+
+  <FILM ID="1" Category="Comedy">
+    <Title>Jak poznałem waszą matkę</Title>
+    <TitleOrg>How I Met Your Mother</TitleOrg>
+    <Director>Carter Bays, Craig Thomas</Director>
+    <Year>2005 - 2014</Year>
+    <Country>USA</Country>
+    <Starring>
+      <Star>Josh Radnor</Star>
+      <Star>Jason Segel</Star>
+      <Star>Neil Patrick Harris</Star>
+    </Starring>
+    <Poster>http://i.datapremiery.pl/1/000/00/636/jak-poznalem-wasza-matke-sezon-2-how-i-met-your-mother-season-2-cover-okladka.jpg</Poster>
+  </FILM>
+
+  <FILM ID="2" Category="Dramat">
+    <Title>Gra o tron</Title>
+    <TitleOrg>Game of Thrones</TitleOrg>
+    <Director>David Benioff, D.B. Weiss</Director>
+    <Year>2011 - 2018</Year>
+    <Country>USA</Country>
+    <Starring>
+      <Star>Lena Headey</Star>
+      <Star>Peter Dinklage</Star>
+    </Starring>
+    <Poster>https://static.posters.cz/image/350/plakaty/game-of-thrones-crown-i12128.jpg</Poster>
+  </FILM>
+
+  <FILM ID="3" Category="Kryminal">
+    <Title>Breaking Bad</Title>
+    <TitleOrg>Breaking Bad</TitleOrg>
+    <Director>Vince Gilligan</Director>
+    <Year>2008 - 2013</Year>
+    <Country>USA</Country>
+    <Starring>
+      <Star>Bryan Cranston</Star>
+      <Star>Aaron Paul</Star>
+      <Star>Anna Gunn</Star>
+    </Starring>
+    <Poster>https://s-media-cache-ak0.pinimg.com/736x/a4/b9/de/a4b9de044d3967643e70a87827523ef2.jpg</Poster>
+  </FILM>
+
+  <FILM ID="4" Category="Kryminal">
+    <Title>Sherlock</Title>
+    <TitleOrg>Sherlock</TitleOrg>
+    <Director>Steven Moffat, Mark Gatiss</Director>
+    <Year>2010 - </Year>
+    <Country>Wielka Brytania</Country>
+    <Starring>
+      <Star>Benedict Cumberbatch</Star>
+      <Star>Martin Freeman</Star>
+    </Starring>
+    <Poster>https://s-media-cache-ak0.pinimg.com/736x/ac/da/09/acda09df027c6cdc127505bf1516cdfa.jpg</Poster>
+  </FILM>
+
+  <FILM ID="5" Category="Dramat">
+    <Title>Dr House</Title>
+    <TitleOrg>House M.D.</TitleOrg>
+    <Director>David Shore</Director>
+    <Year>2004 - 2012</Year>
+    <Country>USA</Country>
+    <Starring>
+      <Star>Hugh Laurie</Star>
+      <Star>Robert Sean Leonard</Star>
+    </Starring>
+    <Poster>https://simg.chomikuj.pl/fd2471a13dbbc2ecd77449fe66275cca0762e3e9?url=http%3A%2F%2Fwww.impawards.com%2Ftv%2Fposters%2Fhouse_md_ver4_xlg.jpg</Poster>
+  </FILM>
+
+  <FILM ID="6" Category="Komedia">
+    <Title>Przyjaciele</Title>
+    <TitleOrg>Friends</TitleOrg>
+    <Director>David Crane, Marta Kauffman</Director>
+    <Year>1994 - 2004</Year>
+    <Country>USA</Country>
+    <Starring>
+      <Star>Jennifer Aniston</Star>
+      <Star>Courteney Cox</Star>
+      <Star>Matthew Perry</Star>
+    </Starring>
+    <Poster>https://www.movieposter.com/posters/archive/main/78/MPW-39449</Poster>
+  </FILM>
+
+</SeriesList>

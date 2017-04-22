@@ -108,6 +108,7 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="series.xml" />
     <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>

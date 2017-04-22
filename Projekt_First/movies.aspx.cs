@@ -16,6 +16,15 @@ namespace Projekt_First
                 categoryLabel.Text = parameter;
             else
                 categoryLabel.Text = Const.NOCAT;
+
+            if (GridView1.SelectedRow != null)
+            {
+                DetailsView1.Visible = true;
+            }
+            else
+            {
+                DetailsView1.Visible = false;
+            }
         }
 
         private string getParam(string param)

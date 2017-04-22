@@ -13,6 +13,15 @@ namespace Projekt_First {
     public partial class master {
         
         /// <summary>
+        /// skrypt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder skrypt;
+        
+        /// <summary>
         /// head control.
         /// </summary>
         /// <remarks>

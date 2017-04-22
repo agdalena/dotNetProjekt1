@@ -11,6 +11,7 @@
       <Star>Keanu Reeves</Star>
       <Star>Laurence Fishburne</Star>
     </Starring>
+    <Poster>http://www.impawards.com/1999/posters/matrix_ver1.jpg</Poster>
   </FILM>
 
   <FILM ID="2" Category="Dramat">
@@ -23,6 +24,7 @@
       <Star>Tom Hanks</Star>
       <Star>Robin Wright</Star>
     </Starring>
+    <Poster>https://68.media.tumblr.com/ac43e8600e7525ddedb448970ee03fc3/tumblr_on8gydWmUU1tk4n0bo3_r1_500.jpg</Poster>
   </FILM>
 
   <FILM ID="3" Category="Action">
@@ -36,6 +38,47 @@
       <Star>Jason Statham</Star>
       <Star>Dwayne Johnson</Star>
     </Starring>
+    <Poster>http://1.fwcdn.pl/po/19/81/741981/7783412.3.jpg</Poster>
   </FILM>
   
+  <FILM ID="4" Category="Dramat">
+    <Title>Nietykalni</Title>
+    <TitleOrg>Intouchables</TitleOrg>
+    <Director>Olivier Nakache, Eric Toledano</Director>
+    <Year>2011</Year>
+    <Country>Francja</Country>
+    <Starring>
+      <Star>François Cluzet</Star>
+      <Star>Omar Sy</Star>
+    </Starring>
+  <Poster>http://1.fwcdn.pl/po/33/90/583390/7397452.3.jpg</Poster>
+  </FILM>
+  
+    <FILM ID="5" Category="Comedy">
+    <Title>Zwierzogród</Title>
+    <TitleOrg>Zootopia</TitleOrg>
+    <Director>Byron Howard, Rich Moore</Director>
+    <Year>2016</Year>
+    <Country>USA</Country>
+    <Starring>
+      <Star>Ginnifer Goodwin</Star>
+      <Star>Jason Bateman</Star>
+    </Starring>
+  <Poster>http://www.kinówki.pl/l/2016-02/Zwierzogrod-Plakat-04th.jpg</Poster>
+  </FILM>
+
+    <FILM ID="6" Category="Comedy">
+    <Title>Chłopaki nie płaczą</Title>
+    <TitleOrg>Chłopaki nie płaczą</TitleOrg>
+    <Director>Olaf Lubaszenko</Director>
+    <Year>2000</Year>
+    <Country>Polska</Country>
+    <Starring>
+      <Star>Maciej Stuhr</Star>
+      <Star>Michał Milowicz</Star>
+      <Star>Cezary Pazura</Star>
+    </Starring>
+  <Poster>http://static.dvdmax.pl/chlopaki-nie-placza-dvd_midi_515574_0003.jpg</Poster>
+  </FILM>
+
 </FilmList>
