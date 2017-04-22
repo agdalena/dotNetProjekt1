@@ -14,8 +14,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="main" runat="server">
 
     <asp:Label ID="categoryLabel" runat="server" Text="Label"></asp:Label>
-    <asp:XmlDataSource ID="sourceFilm" runat="server" DataFile="films.xml" />
-    <asp:XmlDataSource ID="XmlDataSource1" runat="server" DataFile="films.xml" />
+    
+    <asp:XmlDataSource ID="sourceFilm" runat="server" DataFile="~/films.xml" />
+    <asp:XmlDataSource ID="XmlDataSource1" runat="server" DataFile="~/films.xml" />
 
     <div id="masterdiv">
         <div id="div1">
@@ -23,9 +24,11 @@
             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="sourceFilm" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" DataKeyNames="ID" CssClass="grid">
                 <Columns>
                     <asp:TemplateField HeaderText="Title">
+                        
                         <ItemTemplate>
                             <%# XPath("Title") %><br />
                         </ItemTemplate>
+                            
                     </asp:TemplateField>
 
                     <asp:TemplateField HeaderText="Category">
