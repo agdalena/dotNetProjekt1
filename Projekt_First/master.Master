@@ -1,7 +1,8 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="Projekt_First.master" %>
 
 <!DOCTYPE html>
-
+<asp:contentplaceholder id="skrypt" runat="server">
+    </asp:contentplaceholder>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Flmy&Seriale</title>
