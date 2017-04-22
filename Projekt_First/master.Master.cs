@@ -36,5 +36,13 @@ namespace Projekt_First
             Variable.Logged = "";
             loginMV.SetActiveView(nologin);
         }
+
+        protected void Szukaj_Click(object sender, EventArgs e)
+        {
+            string url = "search.aspx";
+            string parametrs = "?";
+            parametrs += "szukane=" + Server.UrlEncode(tsearch.Text);
+            Response.Redirect(url + parametrs);
+        }
     }
 }

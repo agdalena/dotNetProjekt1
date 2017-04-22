@@ -7,26 +7,31 @@ using System.Web.UI.WebControls;
 
 namespace Projekt_First
 {
-    public partial class movies : System.Web.UI.Page
+    public partial class search : System.Web.UI.Page
     {
-
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
             String wybrane = GridView1.SelectedDataKey.Value.ToString();
-            
+
             XmlDataSource1.XPath = "/FilmList/FILM[@ID=" + wybrane + "]";
         }
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            string szukane = getParam("szukane");
+            if (szukane != null)
+            {
+                sourceFilm.XPath = "/FilmList/FILM[ Title='" + szukane + "']";
+            }
+
             string parameter = getParam(Const.PARAM);
 
-            if (!String.IsNullOrEmpty(parameter)) { 
-                categoryLabel.Text = parameter;
-            sourceFilm.XPath = "/FilmList/FILM[@Category='" + parameter + "']";
+            if (!String.IsNullOrEmpty(parameter))
+            {
+                
+                sourceFilm.XPath = "/FilmList/FILM[@Category='" + parameter + "']";
             }
-            else
-                categoryLabel.Text = Const.NOCAT;
+            
 
             if (GridView1.SelectedRow != null)
             {
@@ -37,6 +42,7 @@ namespace Projekt_First
                 DetailsView1.Visible = false;
             }
         }
+
 
         private string getParam(string param)
         {

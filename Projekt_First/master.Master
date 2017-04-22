@@ -6,31 +6,38 @@
 <head runat="server">
     <title>Flmy&Seriale</title>
     <link href="style.css" rel="stylesheet" />
+    <link href="bootstrap-theme.css" rel="stylesheet" />
+    <link href="bootstrap.min.css" rel="stylesheet" />
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="main.css" rel="stylesheet" />
+    <link href="font-awesome.min.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
 
     <form id="form1" runat="server">
-        <div>
+        <header>
             <div id="logo">
-                <div class="w3-container w3-padding-16">
-                    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-closebtn w3-hover-text-red"></i>
-                    <a href="/index.aspx">
-                        <h3 class="w3-wide"><b>Filmy&Seriale</b></h3>
-                    </a>
-                </div>
+                <a href="/index.aspx">
+                    <h3 class="logo2"><b>Filmy&Seriale</b></h3>
+                </a>
             </div>
-            <div id="search"></div>
+            <div id="search">
+                Tytuł: <asp:TextBox ID="tsearch" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator class="errormsg" ID="RequiredFieldValidator3" runat="server" ErrorMessage="*Pole wymagane" ControlToValidate="tsearch"></asp:RequiredFieldValidator>
+
+                <asp:Button runat="server" class="btn btn-default" Text="Szukaj" OnClick="Szukaj_Click" />
+            </div>
             <div id="login">
 
                 <asp:MultiView ID="loginMV" runat="server">
                     <asp:View ID="nologin" runat="server">
                         Login:<asp:TextBox ID="loginTB" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator class="errormsg" ID="RequiredFieldValidator1" runat="server" ErrorMessage="To pole jest wymagane!" ControlToValidate="loginTB"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator class="errormsg" ID="RequiredFieldValidator1" runat="server" ErrorMessage="*Pole wymagane" ControlToValidate="loginTB"></asp:RequiredFieldValidator>
                         Hasło:<asp:TextBox ID="passwdTB" runat="server" TextMode="Password"></asp:TextBox>
-                        <asp:RequiredFieldValidator class="errormsg" ID="RequiredFieldValidator2" runat="server" ErrorMessage="To pole jest wymagane!" ControlToValidate="passwdTB"></asp:RequiredFieldValidator>
-                        <asp:Button ID="zaloguj" OnClick="Button_Zaloguj" runat="server" Text="Zaloguj" />
+                        <asp:RequiredFieldValidator class="errormsg" ID="RequiredFieldValidator2" runat="server" ErrorMessage="*Pole wymagane" ControlToValidate="passwdTB"></asp:RequiredFieldValidator>
+                        <asp:Button ID="zaloguj" class="btn btn-default" OnClick="Button_Zaloguj" runat="server" Text="Zaloguj" />
                     </asp:View>
                     <asp:View ID="inlogin" runat="server">
                         <a>Witaj
@@ -42,15 +49,55 @@
                 </asp:MultiView>
 
             </div>
-            <asp:SiteMapDataSource runat="server" ID="mainSiteMap"></asp:SiteMapDataSource>
-            <div id="menu">
-                <asp:Menu ID="masterMenu" runat="server" DataSourceID="mainSiteMap" Orientation="Horizontal" StaticDisplayLevels="3"></asp:Menu>
-            </div>
-            <asp:ContentPlaceHolder ID="main" runat="server">
-            </asp:ContentPlaceHolder>
-
+        </header>
+        <asp:SiteMapDataSource runat="server" ID="mainSiteMap" ShowStartingNode="False"></asp:SiteMapDataSource>
+        <div id="menu">
+            <asp:Menu ID="masterMenu" CssClass="menu" runat="server" DataSourceID="mainSiteMap" Orientation="Horizontal" StaticDisplayLevels="1">
+                <StaticMenuItemStyle BorderColor="Black" BorderWidth="1px" BorderStyle="Solid"/>
+            </asp:Menu>
         </div>
-        <footer></footer>
+        <asp:ContentPlaceHolder ID="main" runat="server">
+        </asp:ContentPlaceHolder>
+        <footer id="footer">
+            <div class="footer1">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-3 widget">
+                            <h3 class="widget-title">Kontakt</h3>
+                            <div class="widget-body">
+                                <p>
+                                    515 659 922<br>
+                                    <a href="mailto:#">madzia.lena.brzozowska@gmail.com</a><br>
+                                    <br>
+                                    Politechnika Białostocka, ul. Wiejska 45A
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 widget">
+                            <h3 class="widget-title">Poznaj nas</h3>
+                            <div class="widget-body">
+                                <p class="follow-me-icons">
+                                    <a href="https://github.com/agdalena/dotNetProjekt1"><i class="fa fa-github fa-2"></i></a>
+                                    <a href="https://www.facebook.com/m.m.brzozowska"><i class="fa fa-facebook fa-2"></i></a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 widget">
+                            <h3 class="widget-title">Projekt</h3>
+                            <div class="widget-body">
+                                <p>Baza filmów i seriali.</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /row of widgets -->
+                </div>
+            </div>
+        </footer>
     </form>
 </body>
 </html>
