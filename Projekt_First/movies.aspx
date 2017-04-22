@@ -23,9 +23,11 @@
             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="sourceFilm" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" DataKeyNames="ID" CssClass="grid">
                 <Columns>
                     <asp:TemplateField HeaderText="Title">
+                        
                         <ItemTemplate>
                             <%# XPath("Title") %><br />
                         </ItemTemplate>
+                            
                     </asp:TemplateField>
 
                     <asp:TemplateField HeaderText="Category">
