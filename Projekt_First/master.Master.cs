@@ -12,18 +12,18 @@ namespace Projekt_First
         protected void Page_Load(object sender, EventArgs e)
         {
             if (String.IsNullOrEmpty(Variable.Logged))
-                loginMV.SetActiveView(nologin);
+                loginMVmaster.SetActiveView(nologinmaster);
             else
             {
                 loginLabel.InnerText = Variable.Logged;
-                loginMV.SetActiveView(inlogin);
+                loginMVmaster.SetActiveView(inloginmaster);
             }
         }
 
         protected void Button_WylogujMaster(object sender, EventArgs e)
         {
             Variable.Logged = "";
-            loginMV.SetActiveView(nologin);
+            loginMVmaster.SetActiveView(nologinmaster);
         }
 
         protected void Button_ZalogujMaster(object sender, EventArgs e)

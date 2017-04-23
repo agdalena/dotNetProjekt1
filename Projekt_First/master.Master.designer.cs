@@ -58,22 +58,22 @@ namespace Projekt_First {
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
         
         /// <summary>
-        /// loginMV control.
+        /// loginMVmaster control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.MultiView loginMV;
+        protected global::System.Web.UI.WebControls.MultiView loginMVmaster;
         
         /// <summary>
-        /// nologin control.
+        /// nologinmaster control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.View nologin;
+        protected global::System.Web.UI.WebControls.View nologinmaster;
         
         /// <summary>
         /// zalogujmaster control.
@@ -85,13 +85,13 @@ namespace Projekt_First {
         protected global::System.Web.UI.WebControls.Button zalogujmaster;
         
         /// <summary>
-        /// inlogin control.
+        /// inloginmaster control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.View inlogin;
+        protected global::System.Web.UI.WebControls.View inloginmaster;
         
         /// <summary>
         /// loginLabel control.

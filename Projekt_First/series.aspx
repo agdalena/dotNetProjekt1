@@ -13,13 +13,13 @@
 
             <asp:gridview id="GridView1" runat="server" autogeneratecolumns="False" datasourceid="sourceSeries" onselectedindexchanged="GridView1_SelectedIndexChanged" datakeynames="ID" CssClass="Grid">
                 <Columns>
-                    <asp:TemplateField HeaderText="Title">
+                    <asp:TemplateField HeaderText="Tytuł">
                         <ItemTemplate>
                             <%# XPath("Title") %><br />
                         </ItemTemplate>
                     </asp:TemplateField>
 
-                    <asp:TemplateField HeaderText="Category">
+                    <asp:TemplateField HeaderText="Kategoria">
                         <ItemTemplate>
                             <%# XPath("./@Category") %><br />
                         </ItemTemplate>

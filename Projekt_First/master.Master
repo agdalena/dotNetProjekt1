@@ -32,15 +32,15 @@
             </div>
 
             <div id="loginmaster">
-                <asp:MultiView ID="loginMV" runat="server">
-                    <asp:View ID="nologin" runat="server">
+                <asp:MultiView ID="loginMVmaster" runat="server">
+                    <asp:View ID="nologinmaster" runat="server">
                         <asp:Button ID="zalogujmaster" class="btn btn-default" OnClick="Button_ZalogujMaster" runat="server" Text="Zaloguj" />
                     </asp:View>
-                    <asp:View ID="inlogin" runat="server">
+                    <asp:View ID="inloginmaster" runat="server">
                         <a>Witaj
                             <label id="loginLabel" runat="server"></label>
                         </a>
-                        <asp:Button ID="wylogujmaster" OnClick="Button_WylogujMaster" runat="server" Text="Wyloguj" />
+                        <asp:Button ID="wylogujmaster" class="btn btn-default" OnClick="Button_WylogujMaster" runat="server" Text="Wyloguj" />
                     </asp:View>
                 </asp:MultiView>
             </div>
