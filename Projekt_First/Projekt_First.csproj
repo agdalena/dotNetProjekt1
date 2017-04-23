@@ -123,7 +123,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <Content Include="search.aspx" />
+    <Content Include="series.aspx" />
     <Content Include="series.xml" />
+    <Content Include="w3-style.css" />
     <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
@@ -161,6 +163,13 @@
     </Compile>
     <Compile Include="search.aspx.designer.cs">
       <DependentUpon>search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="series.aspx.cs">
+      <DependentUpon>series.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="series.aspx.designer.cs">
+      <DependentUpon>series.aspx</DependentUpon>
     </Compile>
     <Compile Include="Variable.cs" />
   </ItemGroup>

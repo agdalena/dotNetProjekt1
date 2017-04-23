@@ -1,92 +1,221 @@
-﻿body{
-    padding-top:20px;
+﻿body {
+    padding-top: 20px;
 }
 
-header{
-    height:50px;
-    width:100%;
+header {
+    height: 50px;
+    width: 100%;
     margin: 0;
 }
 
-#logo{
-    float:left; 
-    width:30%;
-    height:50px;
+#logo {
+    float: left;
+    width: 30%;
+    height: 50px;
 }
 
-h3 #.logo2{
-    margin:0;
-    padding:0;
+h3 .logo2 {
+    margin: 0;
+    padding: 0;
 }
 
-#search{
-    width:30%;
-    height:50px;
+#search {
+    width: 30%;
+    height: 50px;
     /*margin: 0 auto;*/
-    float:left;
+    float: left;
     vertical-align: bottom;
 }
 
-#tsearch{
-    width:200px;
+#tsearch {
+    width: 200px;
 }
 
-.logo2{
-    font-family:"Segoe UI",Arial,sans-serif;
-    letter-spacing:4px;
+.logo2 {
+    font-family: "Segoe UI",Arial,sans-serif;
+    letter-spacing: 4px;
 }
 
-#login{
+#login {
     vertical-align: bottom;
     text-align: right;
-    float:right;
-    width:40%;
-    height:50px;
+    float: right;
+    width: 40%;
+    height: 50px;
 }
 
-#menu{
-    clear:both;
+#menu {
+    clear: both;
     width:100%;
-    height:50px;
-    background-color:#262626;
-    
+    height: 50px;
+    background-color: #262626;
 }
 
-div.menu {
+.menu {
     padding: 10px 10px 10px 10px;
-    border-collapse:collapse; 
-    font-family:Calibri; 
+    border-collapse: collapse;
+    font-family: Calibri;
     font-size: 20px;
     color: #ffffff;
-    text-align:center;
+    text-align: center;
     border-color: #000000;
-    
+    margin: 0 auto;
+    width: 50%;
 }
 
 div.menu li {
-   background-color: #232628;
-    width: 187px;
+        background-color: #232628;
+        width: 187px;
 }
 
 div.menu a.level1 {
-    background-color: #232628;
-    text-align: center;
-    color: #fff;
-    margin: 3px;
-
+        background-color: #232628;
+        text-align: center;
+        color: #fff;
+        margin: 3px;
 }
 
 div.menu a.level2 {
-    padding-left: 20px;
-    color: #fff;
-    border-width: 100px;
-   
+        padding-left: 20px;
+        color: #fff;
+        border-width: 100px;
 }
 
 div.menu a:hover {
-    background: #595959;
+        background: #595959;
 }
 
 div.menu a.selected {
-    background: #404040;
+        background: #404040;
 }
+
+#Label1 {
+    color: #184356;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Arial;
+}
+
+.poster {
+    width: 250px;
+    height: 400px;
+}
+
+Columns {
+    width: 300px;
+}
+
+.Grid {
+    background-color: #404040;
+    margin: 5px 0 10px 0;
+    border: solid 1px #525252;
+    /* border-collapse:collapse;
+    font-family:Calibri;*/
+    color: white;
+    width: 1234px;
+}
+
+.Details {
+    color: white;
+    background-color: #404040;
+    margin: 5px 0 10px 0;
+    border: solid 1px #c1c1c1;
+    width: auto;
+}
+
+
+.Grid td {
+    padding: 2px;
+    background-color: #404040;
+}
+
+.Grid th {
+    padding: 4px 2px;
+    color: #fff;
+    background-color: #262626;
+    border-left: solid 1px #525252;
+    font-size: 0.9em;
+}
+
+.Grid .alt {
+    background-color: #fcfcfc;
+}
+
+.Grid .pgr {
+    background-color: #363670;
+}
+
+    .Grid .pgr table {
+        margin: 3px 0;
+    }
+
+    .Grid .pgr td {
+        border-width: 0;
+        padding: 0 6px;
+        border-left: solid 1px #666;
+        font-weight: bold;
+        color: #fff;
+        line-height: 12px;
+    }
+
+    .Grid .pgr a {
+        color: Gray;
+        text-decoration: none;
+    }
+
+        .Grid .pgr a:hover {
+            color: #000;
+            text-decoration: none;
+        }
+
+.Grid .selected {
+}
+
+
+.Contener_Details {
+    text-align: center;
+}
+
+.img-product {
+        width: 200px;
+        height: 300px;
+    }
+
+
+
+.mainindex{
+    height:700px;
+    width:1008px;
+	margin:auto;
+	clear:both;
+}
+
+.box{
+	overflow:hidden;
+	padding:5px;
+	margin:5px;
+	float:left;
+}
+
+span {
+    display:none;
+}
+
+.box:hover span,.box:focus span {
+    display:block;
+    position:absolute;
+    bottom:87%;
+    left:40%;
+    width:200px;
+    background-color:#000;
+    font-family:Calibri;
+    font-size:20px;
+    color:#fff;
+    text-align:center;
+    
+}
+
+.box:hover{
+    opacity:0.5;
+}
+

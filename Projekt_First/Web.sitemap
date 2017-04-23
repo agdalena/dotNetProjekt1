@@ -3,11 +3,15 @@
   <siteMapNode>
     <siteMapNode url="movies.aspx" title="Filmy"  description="">
       <siteMapNode url="movies.aspx?q=Action" title="Akcja"  description="" />
-      <siteMapNode url="movies.aspx?q=Science-Fiction" title="Science-Fiction"  description="" />
+      <siteMapNode url="movies.aspx?q=Dramat" title="Dramat"  description="" />
+      <siteMapNode url="movies.aspx?q=Comedy" title="Komedia"  description="" />
+
     </siteMapNode>
     <siteMapNode url="series.aspx" title="Seriale"  description="">
       <siteMapNode url="series.aspx?q=Comedy" title="Komedia"  description="" />
       <siteMapNode url="series.aspx?q=Action" title="Akcja"  description="" />
+      <siteMapNode url="series.aspx?q=Kryminal" title="Kryminal"  description="" />
+
     </siteMapNode>
   </siteMapNode>
 </siteMap>

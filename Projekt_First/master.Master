@@ -7,10 +7,10 @@
     <title>Flmy&Seriale</title>
     <link href="style.css" rel="stylesheet" />
     <link href="bootstrap-theme.css" rel="stylesheet" />
-    <link href="bootstrap.min.css" rel="stylesheet" />
     <link href="bootstrap.css" rel="stylesheet" />
     <link href="main.css" rel="stylesheet" />
     <link href="font-awesome.min.css" rel="stylesheet" />
+    
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -25,7 +25,7 @@
             </div>
             <div id="search">
                 Tytuł: <asp:TextBox ID="tsearch" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator class="errormsg" ID="RequiredFieldValidator3" runat="server" ErrorMessage="*Pole wymagane" ControlToValidate="tsearch"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator class="errormsg" ID="RequiredFieldValidator3" runat="server" ErrorMessage="*Pole wymagane" ControlToValidate="tsearch" Display="None"></asp:RequiredFieldValidator>
 
                 <asp:Button runat="server" class="btn btn-default" Text="Szukaj" OnClick="Szukaj_Click" />
             </div>
@@ -34,9 +34,9 @@
                 <asp:MultiView ID="loginMV" runat="server">
                     <asp:View ID="nologin" runat="server">
                         Login:<asp:TextBox ID="loginTB" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator class="errormsg" ID="RequiredFieldValidator1" runat="server" ErrorMessage="*Pole wymagane" ControlToValidate="loginTB"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator class="errormsg" ID="RequiredFieldValidator1" runat="server" ErrorMessage="*Pole wymagane" ControlToValidate="loginTB" Display="None"></asp:RequiredFieldValidator>
                         Hasło:<asp:TextBox ID="passwdTB" runat="server" TextMode="Password"></asp:TextBox>
-                        <asp:RequiredFieldValidator class="errormsg" ID="RequiredFieldValidator2" runat="server" ErrorMessage="*Pole wymagane" ControlToValidate="passwdTB"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator class="errormsg" ID="RequiredFieldValidator2" runat="server" ErrorMessage="*Pole wymagane" ControlToValidate="passwdTB" Display="None"></asp:RequiredFieldValidator>
                         <asp:Button ID="zaloguj" class="btn btn-default" OnClick="Button_Zaloguj" runat="server" Text="Zaloguj" />
                     </asp:View>
                     <asp:View ID="inlogin" runat="server">
@@ -56,20 +56,23 @@
                 <StaticMenuItemStyle BorderColor="Black" BorderWidth="1px" BorderStyle="Solid"/>
             </asp:Menu>
         </div>
-        <asp:ContentPlaceHolder ID="main" runat="server">
+
+       
+        <asp:ContentPlaceHolder ID="content" runat="server">
         </asp:ContentPlaceHolder>
+        
+      </form>
         <footer id="footer">
             <div class="footer1">
                 <div class="container">
                     <div class="row">
-
                         <div class="col-md-3 widget">
                             <h3 class="widget-title">Kontakt</h3>
                             <div class="widget-body">
                                 <p>
-                                    515 659 922<br>
-                                    <a href="mailto:#">madzia.lena.brzozowska@gmail.com</a><br>
-                                    <br>
+                                    515 659 922<br/>
+                                    <a href="mailto:#">madzia.lena.brzozowska@gmail.com</a><br/>
+                                    <br/>
                                     Politechnika Białostocka, ul. Wiejska 45A
                                 </p>
                             </div>
@@ -98,6 +101,6 @@
                 </div>
             </div>
         </footer>
-    </form>
+    
 </body>
 </html>
