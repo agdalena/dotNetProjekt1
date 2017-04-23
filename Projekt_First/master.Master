@@ -10,7 +10,7 @@
     <link href="bootstrap.css" rel="stylesheet" />
     <link href="main.css" rel="stylesheet" />
     <link href="font-awesome.min.css" rel="stylesheet" />
-    
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -24,22 +24,23 @@
                 </a>
             </div>
             <div id="search">
-                Tytuł: <asp:TextBox ID="tsearch" runat="server"></asp:TextBox>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*Pole wymagane" ControlToValidate="tsearch" Display="None"></asp:RequiredFieldValidator>
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Tytuł musi zaczynać się od dużej litery!" ControlToValidate="tsearch" Display="None" ValidateRequestMode="Inherit" ViewStateMode="Inherit" Visible="True" ValidationExpression="[A-Z]{1}[^\s]+"></asp:RegularExpressionValidator>
-                <asp:Button runat="server" class="btn btn-default" Text="Szukaj" OnClick="Szukaj_Click" />
+                Tytuł:
+                <asp:TextBox ID="tsearch" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ValidationGroup='valGroup1' ID="RequiredFieldValidator1" runat="server" ErrorMessage="*Pole wymagane" ControlToValidate="tsearch" Display="Dynamic" CssClass="ergmsg"></asp:RequiredFieldValidator>
+                <asp:RegularExpressionValidator ValidationGroup='valGroup1' CssClass="ergmsg" ID="RegularExpressionValidator1" runat="server" ErrorMessage="Tytuł musi zaczynać się od dużej litery!" ControlToValidate="tsearch" Display="Dynamic" Visible="True" ValidationExpression="([A-Z]##)"></asp:RegularExpressionValidator>
+                <asp:Button ValidationGroup='valGroup1' runat="server" class="btn btn-default" Text="Szukaj" OnClick="Szukaj_Click" />
             </div>
-            
+
             <div id="loginmaster">
                 <asp:MultiView ID="loginMV" runat="server">
                     <asp:View ID="nologin" runat="server">
-                       <asp:Button ID="zaloguj" class="btn btn-default" OnClick="Button_Zaloguj" runat="server" Text="Zaloguj" />
+                        <asp:Button ID="zalogujmaster" class="btn btn-default" OnClick="Button_ZalogujMaster" runat="server" Text="Zaloguj" />
                     </asp:View>
                     <asp:View ID="inlogin" runat="server">
                         <a>Witaj
                             <label id="loginLabel" runat="server"></label>
                         </a>
-                        <asp:Button ID="wyloguj" OnClick="Button_Wyloguj" runat="server" Text="Wyloguj" />
+                        <asp:Button ID="wylogujmaster" OnClick="Button_WylogujMaster" runat="server" Text="Wyloguj" />
                     </asp:View>
                 </asp:MultiView>
             </div>
@@ -48,54 +49,54 @@
         <asp:SiteMapDataSource runat="server" ID="mainSiteMap" ShowStartingNode="False"></asp:SiteMapDataSource>
         <div id="menu">
             <asp:Menu ID="masterMenu" CssClass="menu" runat="server" DataSourceID="mainSiteMap" Orientation="Horizontal" StaticDisplayLevels="1">
-                <StaticMenuItemStyle BorderColor="Black" BorderWidth="1px" BorderStyle="Solid"/>
+                <StaticMenuItemStyle BorderColor="Black" BorderWidth="1px" BorderStyle="Solid" />
             </asp:Menu>
         </div>
 
-       
+
         <asp:ContentPlaceHolder ID="content" runat="server">
         </asp:ContentPlaceHolder>
-        
-      </form>
-        <footer id="footer">
-            <div class="footer1">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 widget">
-                            <h3 class="widget-title">Kontakt</h3>
-                            <div class="widget-body">
-                                <p>
-                                    515 659 922<br/>
-                                    <a href="mailto:#">madzia.lena.brzozowska@gmail.com</a><br/>
-                                    <br/>
-                                    Politechnika Białostocka, ul. Wiejska 45A
-                                </p>
-                            </div>
+
+    </form>
+    <footer id="footer">
+        <div class="footer1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 widget">
+                        <h3 class="widget-title">Kontakt</h3>
+                        <div class="widget-body">
+                            <p>
+                                515 659 922<br />
+                                <a href="mailto:#">madzia.lena.brzozowska@gmail.com</a><br />
+                                <br />
+                                Politechnika Białostocka, ul. Wiejska 45A
+                            </p>
                         </div>
-
-                        <div class="col-md-3 widget">
-                            <h3 class="widget-title">Poznaj nas</h3>
-                            <div class="widget-body">
-                                <p class="follow-me-icons">
-                                    <a href="https://github.com/agdalena/dotNetProjekt1"><i class="fa fa-github fa-2"></i></a>
-                                    <a href="https://www.facebook.com/m.m.brzozowska"><i class="fa fa-facebook fa-2"></i></a>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 widget">
-                            <h3 class="widget-title">Projekt</h3>
-                            <div class="widget-body">
-                                <p>Baza filmów i seriali.</p>
-
-                            </div>
-                        </div>
-
                     </div>
-                    <!-- /row of widgets -->
+
+                    <div class="col-md-3 widget">
+                        <h3 class="widget-title">Poznaj nas</h3>
+                        <div class="widget-body">
+                            <p class="follow-me-icons">
+                                <a href="https://github.com/agdalena/dotNetProjekt1"><i class="fa fa-github fa-2"></i></a>
+                                <a href="https://www.facebook.com/m.m.brzozowska"><i class="fa fa-facebook fa-2"></i></a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 widget">
+                        <h3 class="widget-title">Projekt</h3>
+                        <div class="widget-body">
+                            <p>Baza filmów i seriali.</p>
+
+                        </div>
+                    </div>
+
                 </div>
+                <!-- /row of widgets -->
             </div>
-        </footer>
-    
+        </div>
+    </footer>
+
 </body>
 </html>

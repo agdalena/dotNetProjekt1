@@ -27,6 +27,8 @@ namespace Projekt_First
                 Variable.Logged = loginTB.Text;
                 loginLabel.InnerText = Variable.Logged;
                 loginMV.SetActiveView(inlogin);
+                string url = "index.aspx";
+                Response.Redirect(url);
             }
 
         }

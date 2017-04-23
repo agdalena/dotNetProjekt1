@@ -76,13 +76,13 @@ namespace Projekt_First {
         protected global::System.Web.UI.WebControls.View nologin;
         
         /// <summary>
-        /// zaloguj control.
+        /// zalogujmaster control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button zaloguj;
+        protected global::System.Web.UI.WebControls.Button zalogujmaster;
         
         /// <summary>
         /// inlogin control.
@@ -103,13 +103,13 @@ namespace Projekt_First {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl loginLabel;
         
         /// <summary>
-        /// wyloguj control.
+        /// wylogujmaster control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button wyloguj;
+        protected global::System.Web.UI.WebControls.Button wylogujmaster;
         
         /// <summary>
         /// mainSiteMap control.

@@ -20,13 +20,13 @@ namespace Projekt_First
             }
         }
 
-        protected void Button_Wyloguj(object sender, EventArgs e)
+        protected void Button_WylogujMaster(object sender, EventArgs e)
         {
             Variable.Logged = "";
             loginMV.SetActiveView(nologin);
         }
 
-        protected void Button_Zaloguj(object sender, EventArgs e)
+        protected void Button_ZalogujMaster(object sender, EventArgs e)
         {
             string url = "login.aspx";
             Response.Redirect(url);

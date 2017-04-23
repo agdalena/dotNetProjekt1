@@ -7,10 +7,18 @@
 
                 <asp:MultiView ID="loginMV" runat="server">
                     <asp:View ID="nologin" runat="server">
+                        <h2>Logowanie</h2>
+                        <br />
+                        <br />
                         Login:<asp:TextBox ID="loginTB" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator class="errormsg" ID="RequiredFieldValidator1" runat="server" ErrorMessage="*Pole wymagane" ControlToValidate="loginTB" Display="None"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator class="errormsg" ID="RequiredFieldValidator1" runat="server" ErrorMessage="*Pole wymagane" ControlToValidate="loginTB" Display="Dynamic" CssClass="ergmsg"></asp:RequiredFieldValidator>
+                        <br />
+                        <br />
+
                         Hasło:<asp:TextBox ID="passwdTB" runat="server" TextMode="Password"></asp:TextBox>
-                        <asp:RequiredFieldValidator class="errormsg" ID="RequiredFieldValidator2" runat="server" ErrorMessage="*Pole wymagane" ControlToValidate="passwdTB" Display="None"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator class="errormsg" ID="RequiredFieldValidator2" runat="server" ErrorMessage="*Pole wymagane" ControlToValidate="passwdTB" Display="Dynamic" CssClass="ergmsg"></asp:RequiredFieldValidator>
+                        <br />
+                        <br />
                         <asp:Button ID="zaloguj" class="btn btn-default" OnClick="Button_Zaloguj" runat="server" Text="Zaloguj" />
                     </asp:View>
                     <asp:View ID="inlogin" runat="server">
