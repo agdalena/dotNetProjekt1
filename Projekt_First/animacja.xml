@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FilmList>
+
+  <FILM ID="1" Category="Child">
+    <Title>WALL·E</Title>
+    <TitleOrg>WALL·E</TitleOrg>
+    <Director>Andrew Stanton</Director>
+    <Year>2008</Year>
+    <Country>USA</Country>
+    <Starring>
+      <Star>Ben Burtt</Star>
+      <Star>Elissa Knight</Star>
+    </Starring>
+    <Poster>http://www.pixartalk.com/wp-content/uploads/2009/06/wallefinal.jpg</Poster>
+  </FILM>
+
+  <FILM ID="2" Category="Adults">
+    <Title>Gnijąca panna młoda</Title>
+    <TitleOrg>Corpse Bride</TitleOrg>
+    <Director>Tim Burto, nMike Johnson</Director>
+    <Year>2005</Year>
+    <Country>USA</Country>
+    <Starring>
+      <Star>Johnny Depp</Star>
+      <Star>Helena Bonham Carter</Star>
+    </Starring>
+    <Poster>http://1.fwcdn.pl/po/84/97/118497/7519261.3.jpg</Poster>
+  </FILM>
+
+  <FILM ID="3" Category="Adults">
+    <Title>Sausage Party</Title>
+    <TitleOrg>Sausage Party</TitleOrg>
+    <Director>Conrad Vernon, Greg Tiernan</Director>
+    <Year>2016</Year>
+    <Country>USA</Country>
+    <Starring>
+      <Star>Seth Rogen</Star>
+      <Star>Kristen Wiig</Star>
+      <Star>Jonah Hill</Star>
+    </Starring>
+    <Poster>http://www.impawards.com/2016/posters/sausage_party.jpg</Poster>
+  </FILM>
+  
+  <FILM ID="4" Category="Child">
+    <Title>Odlot</Title>
+    <TitleOrg>Up</TitleOrg>
+    <Director>Pete Docter, Bob Peterson</Director>
+    <Year>2009</Year>
+    <Country>USA</Country>
+    <Starring>
+      <Star>Edward Asner</Star>
+      <Star>Christopher Plummer</Star>
+    </Starring>
+  <Poster>http://1.fwcdn.pl/po/67/04/436704/7249815.3.jpg</Poster>
+  </FILM>
+  
+    <FILM ID="5" Category="Child">
+    <Title>Zwierzogród</Title>
+    <TitleOrg>Zootopia</TitleOrg>
+    <Director>Byron Howard, Rich Moore</Director>
+    <Year>2016</Year>
+    <Country>USA</Country>
+    <Starring>
+      <Star>Ginnifer Goodwin</Star>
+      <Star>Jason Bateman</Star>
+    </Starring>
+  <Poster>http://www.kinówki.pl/l/2016-02/Zwierzogrod-Plakat-04th.jpg</Poster>
+  </FILM>
+
+    <FILM ID="6" Category="Adults">
+    <Title>Frankenweenie</Title>
+    <TitleOrg>Frankenweenie</TitleOrg>
+    <Director>Tim Burton</Director>
+    <Year>202</Year>
+    <Country>USA</Country>
+    <Starring>
+      <Star>Catherine O'Hara</Star>
+      <Star>Martin Short</Star>
+      <Star>Martin Landau</Star>
+    </Starring>
+  <Poster>http://backwoodshorror.com/wp-content/uploads/2012/06/Frankenweenie-Poster-1.jpeg</Poster>
+  </FILM>
+
+</FilmList>

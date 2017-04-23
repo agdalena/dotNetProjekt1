@@ -1,25 +1,21 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master.Master" AutoEventWireup="true" CodeBehind="search.aspx.cs" Inherits="Projekt_First.search" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master.Master" AutoEventWireup="true" CodeBehind="animacja.aspx.cs" Inherits="Projekt_First.animacja" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="content" runat="server">
-        <asp:XmlDataSource ID="sourceFilm" runat="server" DataFile="~/films.xml" />
-    <asp:XmlDataSource ID="XmlDataSource1" runat="server" DataFile="~/films.xml" />
-        <asp:xmldatasource id="sourceSeries" runat="server" datafile="~/series.xml" />
-    <asp:xmldatasource id="XmlDataSource2" runat="server" datafile="~/series.xml" />
+
+     <asp:Label ID="categoryLabel" runat="server" Text="Label"></asp:Label>
     <asp:XmlDataSource ID="sourceAnime" runat="server" DataFile="~/animacja.xml" />
-    <asp:XmlDataSource ID="XmlDataSource3" runat="server" DataFile="~/animacja.xml" />
+    <asp:XmlDataSource ID="XmlDataSource1" runat="server" DataFile="~/animacja.xml" />
 
     <div id="masterdiv">
-        <div id="div1">
+        <div id="Contener_Grid">
 
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="sourceFilm" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" DataKeyNames="ID" CssClass="Grid">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="sourceAnime" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" DataKeyNames="ID" CssClass="Grid">
                 <Columns>
-                    <asp:TemplateField HeaderText="Tytuł">
-                        
+                    <asp:TemplateField HeaderText="Tytuł">  
                         <ItemTemplate>
                             <%# XPath("Title") %><br />
                         </ItemTemplate>
-                            
                     </asp:TemplateField>
 
                     <asp:TemplateField HeaderText="Kategoria">
@@ -31,14 +27,14 @@
                 </Columns>
 
                 <SelectedRowStyle ForeColor="White" Font-Bold="True"
-                    BackColor="#737373"></SelectedRowStyle>
-                <RowStyle BackColor="#404040" ForeColor="White"></RowStyle>
+                    BackColor="#184356"></SelectedRowStyle>
+                <RowStyle BackColor="#306293" ForeColor="White"></RowStyle>
             </asp:GridView>
 
             <br />
 
         </div>
-        <div id="div2">
+        <div id="Contener_Details">
             
             <asp:DetailsView ID="DetailsView1" runat="server" DataSourceID="XmlDataSource1" AutoGenerateRows="False" CssClass="Details">
                 
@@ -57,7 +53,7 @@
                             </div>
                         </ItemTemplate>
                     </asp:TemplateField>
-                     <asp:TemplateField HeaderText="Tytuł orginalny:">
+                     <asp:TemplateField HeaderText="Tytuł oryginalny:">
                         <ItemTemplate>
                             <div id="title1">
                                 <%# XPath("TitleOrg") %><br />
@@ -113,4 +109,5 @@
             </asp:DetailsView>
         </div>
     </div>
+
 </asp:Content>

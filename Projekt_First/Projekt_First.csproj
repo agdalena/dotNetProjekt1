@@ -94,6 +94,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="animacja.aspx" />
+    <Content Include="animacja.xml" />
     <Content Include="bootstrap-theme.css" />
     <Content Include="bootstrap.css" />
     <Content Include="bootstrap.min.css" />
@@ -102,6 +104,7 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="index.aspx" />
+    <Content Include="login.aspx" />
     <Content Include="main.css" />
     <Content Include="movies.aspx" />
     <Content Include="packages.config" />
@@ -133,6 +136,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="animacja.aspx.cs">
+      <DependentUpon>animacja.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="animacja.aspx.designer.cs">
+      <DependentUpon>animacja.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Const.cs" />
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
@@ -140,6 +150,13 @@
     </Compile>
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="master.Master.cs">
       <DependentUpon>master.Master</DependentUpon>

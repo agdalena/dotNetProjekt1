@@ -10,43 +10,16 @@
 namespace Projekt_First {
     
     
-    public partial class search {
+    public partial class animacja {
         
         /// <summary>
-        /// sourceFilm control.
+        /// categoryLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.XmlDataSource sourceFilm;
-        
-        /// <summary>
-        /// XmlDataSource1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.XmlDataSource XmlDataSource1;
-        
-        /// <summary>
-        /// sourceSeries control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.XmlDataSource sourceSeries;
-        
-        /// <summary>
-        /// XmlDataSource2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.XmlDataSource XmlDataSource2;
+        protected global::System.Web.UI.WebControls.Label categoryLabel;
         
         /// <summary>
         /// sourceAnime control.
@@ -58,13 +31,13 @@ namespace Projekt_First {
         protected global::System.Web.UI.WebControls.XmlDataSource sourceAnime;
         
         /// <summary>
-        /// XmlDataSource3 control.
+        /// XmlDataSource1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.XmlDataSource XmlDataSource3;
+        protected global::System.Web.UI.WebControls.XmlDataSource XmlDataSource1;
         
         /// <summary>
         /// GridView1 control.

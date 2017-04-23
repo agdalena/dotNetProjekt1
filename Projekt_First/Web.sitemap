@@ -13,5 +13,9 @@
       <siteMapNode url="series.aspx?q=Kryminal" title="Kryminal"  description="" />
 
     </siteMapNode>
+    <siteMapNode url="animacja.aspx" title="Animacje"  description="">
+      <siteMapNode url="animacja.aspx?q=Adults" title="Dla Dorosłych"  description="" />
+      <siteMapNode url="animacja.aspx?q=Child" title="Dla Dzieci"  description="" />
+    </siteMapNode>
   </siteMapNode>
 </siteMap>

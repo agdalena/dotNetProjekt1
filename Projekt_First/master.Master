@@ -25,19 +25,15 @@
             </div>
             <div id="search">
                 Tytuł: <asp:TextBox ID="tsearch" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator class="errormsg" ID="RequiredFieldValidator3" runat="server" ErrorMessage="*Pole wymagane" ControlToValidate="tsearch" Display="None"></asp:RequiredFieldValidator>
-
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*Pole wymagane" ControlToValidate="tsearch" Display="None"></asp:RequiredFieldValidator>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Tytuł musi zaczynać się od dużej litery!" ControlToValidate="tsearch" Display="None" ValidateRequestMode="Inherit" ViewStateMode="Inherit" Visible="True" ValidationExpression="[A-Z]{1}[^\s]+"></asp:RegularExpressionValidator>
                 <asp:Button runat="server" class="btn btn-default" Text="Szukaj" OnClick="Szukaj_Click" />
             </div>
-            <div id="login">
-
+            
+            <div id="loginmaster">
                 <asp:MultiView ID="loginMV" runat="server">
                     <asp:View ID="nologin" runat="server">
-                        Login:<asp:TextBox ID="loginTB" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator class="errormsg" ID="RequiredFieldValidator1" runat="server" ErrorMessage="*Pole wymagane" ControlToValidate="loginTB" Display="None"></asp:RequiredFieldValidator>
-                        Hasło:<asp:TextBox ID="passwdTB" runat="server" TextMode="Password"></asp:TextBox>
-                        <asp:RequiredFieldValidator class="errormsg" ID="RequiredFieldValidator2" runat="server" ErrorMessage="*Pole wymagane" ControlToValidate="passwdTB" Display="None"></asp:RequiredFieldValidator>
-                        <asp:Button ID="zaloguj" class="btn btn-default" OnClick="Button_Zaloguj" runat="server" Text="Zaloguj" />
+                       <asp:Button ID="zaloguj" class="btn btn-default" OnClick="Button_Zaloguj" runat="server" Text="Zaloguj" />
                     </asp:View>
                     <asp:View ID="inlogin" runat="server">
                         <a>Witaj
@@ -45,10 +41,9 @@
                         </a>
                         <asp:Button ID="wyloguj" OnClick="Button_Wyloguj" runat="server" Text="Wyloguj" />
                     </asp:View>
-
                 </asp:MultiView>
-
             </div>
+
         </header>
         <asp:SiteMapDataSource runat="server" ID="mainSiteMap" ShowStartingNode="False"></asp:SiteMapDataSource>
         <div id="menu">
